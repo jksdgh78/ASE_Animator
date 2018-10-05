@@ -25,6 +25,19 @@ endif(MSVC_IDE)
 include_directories(${CMAKE_BINARY_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/GLInterface)
 include_directories(${CMAKE_SOURCE_DIR}/QtFrame)
+include_directories(${CMAKE_SOURCE_DIR}/soil/src)
+
+find_path(SOIL_INCLUDE_DIR SOIL.h)
+
+find_library(SOIL_LIBRARY SOIL)
+if (SOIL_INCLUDE_DIR AND SOIL_LIBRARY)
+	set(SOIL_FOUND TRUE)
+	add_definitions(-DHAVE_LIBSIFTGPU=1)
+	include_directories(${SOIL_INCLUDE_DIR})
+	set(SOIL_LIBRARIES ${SOIL_LIBRARIES} ${SOIL_LIBRARY})
+endif ()
+
+
 
 #######################################################
 # find opengl 
@@ -145,6 +158,7 @@ endif()
 endif()
 
 # link set
+target_link_libraries(${PROJ_NAME} ${SOIL_LIBRARIES})
 target_link_libraries( ${PROJ_NAME} 
                        GLInterface
 					   ${LIBS}

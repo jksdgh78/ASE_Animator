@@ -17,7 +17,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Korean (Korea) resources
+// 한국어(대한민국) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
@@ -84,10 +84,10 @@ BEGIN
     EDITTEXT        IDC_START,69,116,40,14,ES_AUTOHSCROLL
     EDITTEXT        IDC_END,69,135,40,14,ES_AUTOHSCROLL
     CONTROL         "",IDC_ANI_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,168,161,72
-    EDITTEXT        IDC_FRAME_TIME,59,268,40,14,ES_AUTOHSCROLL
-    LTEXT           "프레임간 시간",IDC_STATIC,0,270,47,8
-    LTEXT           "애니메이션 이름",IDC_STATIC,0,286,54,8
-    EDITTEXT        IDC_NEW_ANI_NAME,57,283,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAME_TIME,72,268,40,14,ES_AUTOHSCROLL
+    LTEXT           "Current frame Time",IDC_STATIC,5,271,63,8
+    LTEXT           "Animation Name",IDC_STATIC,7,286,52,8
+    EDITTEXT        IDC_NEW_ANI_NAME,72,284,40,14,ES_AUTOHSCROLL
     PUSHBUTTON      "SAVE",IDC_SAVEANI,132,284,50,14
     PUSHBUTTON      "OPEN",IDC_FOLDER_OPEN,123,126,50,14
     CONTROL         "",IDC_TRACK,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,9,306,162,92
@@ -113,12 +113,23 @@ BEGIN
 END
 #endif    // APSTUDIO_INVOKED
 
-#endif    // Korean (Korea) resources
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MAINPROCESSING AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// English (United States) resources
+// 영어(미국) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
@@ -168,7 +179,9 @@ END
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\CG_Animation.ico"
+
 IDR_CG_AnimationTYPE    ICON                    "res\\CG_AnimationDoc.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -176,6 +189,7 @@ IDR_CG_AnimationTYPE    ICON                    "res\\CG_AnimationDoc.ico"
 //
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -467,7 +481,7 @@ BEGIN
     AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
 END
 
-#endif    // English (United States) resources
+#endif    // 영어(미국) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
