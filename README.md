@@ -23,12 +23,19 @@ Click for watch demo video
    3) Click "Configure" button at left bottom side
       - Select "Visual Studio 15 2017" as your generator
       - An error will be occurred! It's fine
-      
-   4) Set "GLUT_ROOT_PATH" to "YOUR_PATH/ASE_Animator/glut3.6_win32"
+   4) Do some environmental settings (Important!)
+      - Set "GLUT_ROOT_PATH" as "YOUR_PATH/ASE_Animator/glut3.6_win32".
+      - Set "SOIL_INCLUDE_DIR" as "YOUR_PATH/ASE_Animator/soil/src".
+      - Set "SOIL_LIBRARY" as "YOUR_PATH/ASE_Animator/soil/lib/SOIL.lib".
+  
    5) Click "Configure" again
    6) Click "Generate"
       - CMake will generate build file at your build path
       
       
-4) Go to your build path and open "CG_Animation.sln" file
-    - If you need to install additional packages then install them too
+4) Build solution from Visual Studio 2017
+    1) Go to your build path and open "CG_Animation.sln" file
+         - If you need to install additional packages then install them too
+    2) From solution explorer, right click "CG_Animation" project and set as startup project 
+    3) Build solution
+    4) Press F5!
