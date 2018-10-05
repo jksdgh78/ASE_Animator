@@ -31,4 +31,4 @@ Click for watch demo video
       
       
 4) Go to your build path and open "CG_Animation.sln" file
-  - If you need to install additional packages then install them too
+    - If you need to install additional packages then install them too
