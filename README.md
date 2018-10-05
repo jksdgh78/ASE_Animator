@@ -1,5 +1,7 @@
 # ASE_Animator
 Load an ASE file and add an animation 
+
+Click for watch demo video
 [![Watch the video](https://i.postimg.cc/Y0b0qt3Z/ase_animator.png)](https://drive.google.com/file/d/1WRW8tD48aMaTyyoweVMHK5dsM3r6FCcx/view)
 
 # Requirements 
